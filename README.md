@@ -20,3 +20,7 @@ Component-based web applications built using React, focusing on state management
 
 ## Notes
 These projects are intended to demonstrate core front-end concepts and hands-on development experience rather than production-ready applications.
+
+## Disclaimer
+This project is a non-commercial educational website. All images and media related to Xu Xin are used for informational purposes only. No copyright infringement is intended.
+
