@@ -1,5 +1,7 @@
 # Web Development Projects
 
+Portfolio/Navigation: https://intencione.github.io/web-development-projects/
+
 This repository showcases selected web development projects built using HTML, CSS, JavaScript, and React.  
 The projects were developed as part of coursework at the University of Southern California as well as independent practice.
 
