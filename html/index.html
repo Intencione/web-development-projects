@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" 
+    content="This website explores the story of an extremely famous table tennis player Xu Xin. 
+    It exhibits his achievements, highlights, personal business brand Xuperman, 
+    and more by exploring different blocks on the homepage.">
+    <title>Xu Xin - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blocks{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px;
+            width: 90%;
+
+        }
+        .blocks a{
+            color:black;
+            font-size: 30px;
+            text-decoration: none;
+            visibility: hidden;
+        }
+        .block{
+            width: 450px;
+            height: 150px;
+            margin: 20px;
+            background-color: #cfd2d3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid #020100;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            opacity:0.6;
+        }
+        .block:hover a{
+            visibility: visible;
+            transition: color 0.5s ease-in-out;
+            color:white;
+        }
+        #info{
+            background-image: url("img/xuxin.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        .block:hover{
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        #achievements{
+            background-image: url("img/xuxin2013.png");
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+
+        #highlights{
+            background-image: url("img/xuxin2016.png");
+            background-position: 0px -30px;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        #xuperman{
+            background-image: url("img/xuperman.png");
+            background-position: 0px -120px;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+        #xuperman a{
+            color:white;
+        }
+        #xuperman:hover a{
+            visibility: visible;
+            color:red;
+        }
+
+        #equipments{
+            background-image: url("img/rubbercover.jpg");
+            background-position: 0px -80px;
+            background-color: rgba(0, 0, 0, 0.4); 
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav id="navigation">
+        <div class="nav"><a href="index.html">Home</a></div>
+        <div class="nav"><a href="basic-info.html">About Xu Xin</a></div>
+        <div class="nav"><a href="achievements.html">Achievements</a></div>
+        <div class="nav"><a href="highlights.html">Highlights</a></div>
+        <div class="nav"><a href="xuperman.html">Xuperman</a></div>
+        <div class="nav"><a href="equipment.html">Equipment</a></div>
+        <div class="nav"><a href="project_summary.html">Project Summary</a></div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Welcome to Xu Xin's Universe</h1>
+        <p>Discover the life, achievements, and passion of the greatest table tennis "artist".</p>
+    </header>
+
+    <!-- Introduction -->
+    <div class="intro">
+        <p>
+            This website is dedicated to tell the story of Xu Xin. Whether or not you are a fan,
+             a new player, or just curious, you will find inspiration through his career,
+              achievements, style, and personal experiences.
+        </p>
+    </div>
+
+    <!-- Blocks for different explorations -->
+    <div class="blocks">
+        <div class="block" id="info"><a href="basic-info.html" target="_blank">Basic Info</a></div>
+        <div class="block" id="achievements"><a href="achievements.html" target="_blank">Career Achievements</a></div>
+        <div class="block" id="highlights"><a href="highlights.html" target="_blank">Highlight Clips</a></div>
+        <div class="block" id="xuperman"><a href="xuperman.html" target="_blank">Xuperman Brand</a></div>
+        <div class="block" id="equipments"><a href="equipment.html" target="_blank">Equipments</a></div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© 2025 by Charlie. All rights reserved.</p>
+    </footer>
+
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(".block").click(function(){
+        var targetedpage = $(this).find("a").attr("href");
+        window.open(targetedpage,"_blank")
+        });
+
+        $(".nav").click(function(){
+        window.location = $(this).find("a").attr("href");
+        
+        });
+    </script>
+
+</body>
+</html>
