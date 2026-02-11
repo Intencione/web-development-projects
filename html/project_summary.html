@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This page provides a project summary to the Xu Xin project,
+    It explains the topic and purposes for the whole website(including all pages). Additionally,
+    it talks about what features are used in different pages.
+    ">
+    <title>About Xu Xin Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .summary{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        li{
+            margin:15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav id="navigation">
+        <div class="nav"><a href="index.html">Home</a></div>
+        <div class="nav"><a href="basic-info.html">About Xu Xin</a></div>
+        <div class="nav"><a href="achievements.html">Achievements</a></div>
+        <div class="nav"><a href="highlights.html">Highlights</a></div>
+        <div class="nav"><a href="xuperman.html">Xuperman</a></div>
+        <div class="nav"><a href="equipment.html">Equipment</a></div>
+        <div class="nav"><a href="project_summary.html">Project Summary</a></div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Get to Know this Xu Xin Project</h1>
+        <p>This website is dedicated to Xu Xin, a world-renowned Chinese table tennis 
+            player known for his creativity, unique playing style, and professional achievements. </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="summary">
+        <h2>Quick Overview</h2>
+        <p>The site aims to present a comprehensive yet accessible showcase of Xu Xin’s:</p>
+        <ul>
+            <li>Biography and playing style</li>
+            <li>Major career achievements</li>
+            <li>Highlights and memorable moments</li>
+            <li>Personal brand “Xuperman” and associated products</li>
+        </ul>
+        <p>The purpose of this site is to introduce to both fans and new people about Xu Xin’s
+             contributions to the sport, in a balanced way of text, visuals, 
+             and multimedia content. It is designed as a mini-biography, product exhibition, 
+             and showing his influence in table tennis matches/cultures.</p>
+        <h2>Contents</h2>
+        <p>This website has 6 main pages</p>
+        <ul>
+            <li><a href="index.html">index.html - A homepage for everything</a></li>
+            <li><a href="basic-info.html">basic-info.html - An intro to Xu Xin's life and his playing style</a></li>
+            <li><a href="achievements.html">achievements.html - A timeline & list of Xu Xin's participation and ranks in different matches</a></li>
+            <li><a href="highlights.html">highlights.html - An exhibition of different clips picked for his best moments</a></li>
+            <li><a href="xuperman.html">xuperman.html - A page designed to show Xu Xin's business and talks about it in details</a></li>
+            <li><a href="equipment.html">equipment.html - A page designed to exhibit commodities in Xuperman</a></li>
+
+        </ul>
+
+        <h2>Implemented Features</h2>
+        <p>To make better vision effects and make everything more readable. This website Implemented
+            different CSS and jQuery for better experiences.</p>
+        <ul>
+            <li>External CSS for shared styling that linked across all pages: style.css </li>
+            <li>Internal CSS for page-specific styles: Each content page includes internal style blocks for elements unique to that page</li>
+            <li>Unified navigation menu and footer on all pages for consistent design</li>
+            <li>Responsive elements using flexbox</li>
+            <li>iframe embeds YouTube highlight videos on highlights.html</li>
+            <li>CSS transitions and transformations:
+                <ul>
+                    <li>transform: scale() on hover for blocks, product cards, and images</li>
+                    <li>transition: opacity for different vision effects on blocks on index.html</li>
+                    <li>smooth transition effects for interactive elements</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h2>jQuery functions Used</h2>
+        <p>A jQuery method was used to make the entire navigation div and the blocks elements clickable instead of simply the text</p>
+        <a href="https://www.w3schools.com/jquery/jquery_events.asp" target="_blank">Links to the click jQuery introduction</a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© 2025 by Charlie. All rights reserved.</p>
+    </footer>
+<!--jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(".nav").click(function(){
+    window.location = $(this).find("a").attr("href");
+    
+    });
+</script>
+</body>
+</html>

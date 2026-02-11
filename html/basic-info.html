@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This page explores Xu Xin's early life, 
+    playing style, and personal background in detail. It talks about how he became 
+    one of the most influential table tennis players in the world as well as the 
+    name of 'People's Artists'.">
+    <title>About Xu Xin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .basic-info-intro{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .basic-info-img{
+            width: 300px; 
+            max-width: 500px;
+            margin: 20px; 
+            border-radius: 12px;
+            transition: opacity 0.5s ease-in-out;
+            opacity:1;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 2px solid #020100;
+            text-align: center;
+            cursor: pointer;
+            color:transparent;
+            font-size:30px;
+        }   
+        .basic-info-img:hover{
+            opacity: 0.7;
+            transition: color 0.5s ease-in-out;
+            color:orange;
+        }
+        #basic-info-img1{
+            float:right;
+            display: flex;
+            width:300px;
+            height:300px;
+            background-size: cover;
+            background-image: url(img/youngxuxin.png);
+        }
+
+
+        #basic-info-img2{
+            width:800px;
+            height: 500px;
+            max-width: 800px;
+            margin-left:-10px;
+            background-size: cover;
+            background-image: url(img/xuxininterview.png);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav id="navigation">
+        <div class="nav"><a href="index.html">Home</a></div>
+        <div class="nav"><a href="basic-info.html">About Xu Xin</a></div>
+        <div class="nav"><a href="achievements.html">Achievements</a></div>
+        <div class="nav"><a href="highlights.html">Highlights</a></div>
+        <div class="nav"><a href="xuperman.html">Xuperman</a></div>
+        <div class="nav"><a href="equipment.html">Equipment</a></div>
+        <div class="nav"><a href="project_summary.html">Project Summary</a></div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Get to Know Xu Xin</h1>
+        <p>Explore his lives, style, and what makes him a true 🏓 artist.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="basic-info-intro">
+        <h2>His Early Life</h2>
+        <p>Xu Xin was born on January 8, 1990, in Xuzhou, Jiangsu Province, 
+            China. He began playing table tennis when he was 5 years old and got
+            his first championships in 2004. He then enrolled in the National Second
+            Team in February 2006 and promoted to National First Team in the same October.
+        </p>
+
+        <h2>Playing Style</h2>
+        <div class="basic-info-img" id="basic-info-img1">Young Xuxin</div>
+        <p>Xuxin is famous for his untraditional penhold grip and his powerful and spinny forehand loops, 
+            His footworks and his creativities in tactics can often surprise everyone, when 
+            you are expecting him to use his backhand, he can perform a decent behind-the-back shot
+            and ultimately earns the point. The title of "People's Artist" was just earned like that.  
+            He has also demonstrated an exceptional control on mid-to-long distance shots, he frequently 
+            pulls off high lobs from afar to stay in the rally, turning defense into attack and then 
+            winning the point.
+        </p>
+
+        <h2>Personality & Off the Table</h2>
+        <p>Outside of the table, Xu Xin is known for his humour. During many after-match interviews and 
+            separate interviews, his responses can show his professionality with no damage in his 
+            humours.
+        </p>
+        <div class="basic-info-img" id="basic-info-img2">Interviewing Xuxin at his own business</div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© 2025 by Charlie. All rights reserved.</p>
+    </footer>
+<!--jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(".nav").click(function(){
+    window.location = $(this).find("a").attr("href");
+    
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="This page contains several clips of Xu Xin's highlight
+    scores from different matches. You can watch the incredible strokes and rallies he played
+    and enjoy the art of table tennis.">
+    <title>Xu Xin's Best Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .x-highlights{
+            width: 90%;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap:20px;
+            justify-content: center;
+        }
+        .x-highlights iframe{
+            width:560px;
+            height:315px;
+        }
+        #best-xuxin{
+            color:rgb(206, 0, 0);
+            font-weight: bold;
+            font-size:30px;
+            text-align: center;
+        }
+        #best-xuxin iframe{
+            width:900px;
+            height:500px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav id="navigation">
+        <div class="nav"><a href="index.html">Home</a></div>
+        <div class="nav"><a href="basic-info.html">About Xu Xin</a></div>
+        <div class="nav"><a href="achievements.html">Achievements</a></div>
+        <div class="nav"><a href="highlights.html">Highlights</a></div>
+        <div class="nav"><a href="xuperman.html">Xuperman</a></div>
+        <div class="nav"><a href="equipment.html">Equipment</a></div>
+        <div class="nav"><a href="project_summary.html">Project Summary</a></div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Xu Xin's Best Scores</h1>
+        <p>Explore Xu Xin as a real table tennis artist! 🏓</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="x-highlights">
+        
+        
+        <div class="highlights-item">
+            <h3>Behind-the-Back Shot (German Open 2020)</h3>
+            <iframe src="https://www.youtube.com/embed/GeaL89hC4EE" 
+                    title="Xu Xin Behind-the-Back Shot"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                     picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                     allowfullscreen></iframe>
+        </div>
+    
+        <div class="highlights-item">
+            <h3>Incredible Rally vs Fan Zhen Dong</h3>
+            <iframe src="https://www.youtube.com/embed/BjCCz4jOB_4" 
+                    title="Xu Xin vs Fan Zhen Dong"  
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+    
+        <div class="highlights-item">
+            <h3>Playing Around With Ma Long</h3>
+            <iframe src="https://www.youtube.com/embed/Ojc2nkZjOPM" 
+                    title="Xu Xin Playing Around with Ma Long"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="highlights-item">
+            <h3>Aggressive Attacks!</h3>
+            <iframe src="https://www.youtube.com/embed/fK6Wlm07iBU" 
+                    title="Aggressive Xu Xin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="highlights-item" id="best-xuxin">
+            <h3>CLASSICAL! Best Scores of Xu Xin!!🏓</h3>
+            <iframe src="https://www.youtube.com/embed/yaLrnXBOjkQ" 
+                    title="Xu Xin Best Scores"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+        
+        
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <p>© 2025 by Charlie. All rights reserved.</p>
+    </footer>
+<!--jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(".nav").click(function(){
+    window.location = $(this).find("a").attr("href");
+    
+    });
+</script>
+</body>
+</html>
